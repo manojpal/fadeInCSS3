@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#b
+{
+	width: 200px;
+	height: 40px;
+	background: red;
+	border-radius: 10px;
+	text-align: center;
+	margin: 35px;
+	padding: 30px 0px;
+	box-shadow: 2px 4px 10px 2px;
+	opacity:0;
+	color: white;
+	font: 20px bold;
+}
+#a
+{
+	width: 200px;
+	height: 40px;
+	background: rgb(156, 155, 155);
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+	margin: 35px;
+	padding: 30px 0px;
+	box-shadow: 2px 4px 10px 2px;
+	color: white;
+	font: 20px bold;
+}
+#a +#b { 
+	animation:last 1s;
+  -webkit-animation:last  1s ; 
+}
+#a:hover + #b { 
+	animation:myfirst 1s;
+	-webkit-animation:first 1s;
+	opacity:1;
+				}
+
+@keyframes first
+{
+from {opacity:0.1;}
+to {opacity:1;}
+}
+
+@-webkit-keyframes first 
+{
+from {opacity:0.1}
+to {opacity:1;}
+}
+@keyframes last
+{
+from {opacity:1;}
+to {opacity:0.1;}
+}
+
+@-webkit-keyframes last 
+{
+from {opacity:1}
+to {opacity:0.1;}
+}	
+
+</style>
+</head>
+<body>
+<div id="a">Hover</div>
+<div id="b">show</div>
+
+</body>
+</html>
