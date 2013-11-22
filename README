@@ -1,1 +1,3 @@
-Fade In and Fade Out using CSS3 
+Fade In and Fade Out effect using CSS3:
+
+When hover the particular DOM element we want to  show and hide  other DOM with the fade In and Fade Out effect usaually we are using Jquery.Without help of Jquery we can achieve that effect only using CSS3
